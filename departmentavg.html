@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="#" method="POST">
+    <div class="input-group mb-3">
+      <label for="exampleFormControlInput1" class="form-label"><strong>{{person}}</strong></label>
+    </div>
+
+    <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">A Level Subject</label>
+        <select name = "subject" class="form-select" id="inputGroupSelect01">
+          <!--option selected>Choose...</option-->
+          <option value="Art">Art</option>
+          <option value="Biology">Biology</option>
+          <option value="Business">Business</option>
+          <option value="Chemistry">Chemistry</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Economics">Economics</option>
+          <option value="English literature">English literature</option>
+          <option value="French">French</option>
+          <option value="Geography">Geography</option>
+          <option value="Geology">Geology</option>
+          <option value="German">German</option>
+          <option value="History">History</option>
+          <option value="Maths">Maths</option>
+          <option value="Further Maths">Further Maths</option>
+          <option value="Music">Music</option>
+          <option value="PE">PE</option>
+          <option value="Physics">Physics</option>
+          <option value="Politics">Politics</option>
+          <option value="Psychology">Psychology</option>
+          <option value="Religious Studies">Religious Studies</option>
+          <option value="Theatre Studies">Theatre Studies</option>
+          <option value="EPQ">EPQ</option>
+        </select>
+    </div>
+
+    <div class="input-group mb-3">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">A-level department average</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">A*= 60</a></li>
+        <li><a class="dropdown-item" href="#">A = 50</a></li>
+        <li><a class="dropdown-item" href="#">B = 40</a></li> <!-- this list is used to give an indication of how the dropdown works but not an actual selection-->
+        <li><a class="dropdown-item" href="#">C = 30</a></li>
+        <li><a class="dropdown-item" href="#">D = 20</a></li>
+        <li><a class="dropdown-item" href="#">E = 10</a></li>
+      </ul>
+      <input name="alevdepavg" type="text" class="form-control" aria-label="Text input with dropdown button">
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Save</button>
+</form>
+{% endblock %}

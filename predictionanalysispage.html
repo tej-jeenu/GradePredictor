@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <form action="#" method="POST">
+     <h1 style = "{{colour}}">{{grade}}</h1>
+     <p style = "{{colour}}">{{exp}}</p>
+
+
+     {% for i in range(0, len) %} 
+        <p>{{above[i]}}</p>
+        {% for k in set[i] %} 
+            <li>{{k}}</li>
+        {% endfor %} 
+     {% endfor %} 
+  </form>
+{% endblock %}

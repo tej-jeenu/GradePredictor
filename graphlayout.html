@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <html>
+   {% for i in range(0, len) %} 
+      <p style = "{{colors[i]}}">{{stats[i]}}</p>
+   {% endfor %} 
+ </html>
+{% endblock %}

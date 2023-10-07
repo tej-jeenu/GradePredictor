@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="input-group mb-3">
+    <label for="exampleFormControlInput1" class="form-label" style="font-size: 5vw" > <strong> welcome, {{person}} {{usertype}} :) </strong></label>
+</div> <!-- code here is used to clearly indicate who's logged in -->
+    <br>
+<div>
+    <label for="exampleFormControlInput1" class="form-label" style="font-size: 3vw" >Grade conversions: </label>
+    <li>A* = 60</li>
+    <li>A = 50</li>
+    <li>B = 40</li>
+    <li>C = 30</li>
+    <li>etc.</li>
+</div>
+    <br>
+<div class="input-group mb-3">
+    <label for="exampleFormControlInput1" class="form-label" style="font-size: 2vw" > - make sure department averages are added before predicting any grades</label>
+    <label for="exampleFormControlInput1" class="form-label" style="font-size: 2vw" > - login is used to identify school but user remains anonymous for security</label>
+</div>
+{% endblock %}

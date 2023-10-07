@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+ <form action="#" method="POST">
+    <div class="input-group mb-3">
+      <label for="exampleFormControlInput1" class="form-label"><strong>{{person}}</strong></label>
+    </div>
+
+    <div class="input-group mb-3">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Student ID</button>
+      <ul class="dropdown-menu">   <!-- I'm asking for this because I want to get the student's details so that it can be compared with current progress -->
+        <li><a class="dropdown-item" href="#">e.g. 4608</a></li>
+      </ul>
+      <input name="studentid" type="text" class="form-control" aria-label="Text input with dropdown button">
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupSelect01">Subject</label>
+      <select name = "sub" class="form-select" id="inputGroupSelect01">
+        <option value="Art">Art</option>
+        <option value="Biology">Biology</option>
+        <option value="Business">Business</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Economics">Economics</option>
+        <option value="English literature">English literature</option>
+        <option value="French">French</option>
+        <option value="Geography">Geography</option>
+        <option value="Geology">Geology</option>
+        <option value="German">German</option>
+        <option value="History">History</option>
+        <option value="Maths">Maths</option>
+        <option value="Further Maths">Further Maths</option>
+        <option value="Music">Music</option>
+        <option value="PE">PE</option>
+        <option value="Physics">Physics</option>
+        <option value="Politics">Politics</option>
+        <option value="Psychology">Psychology</option>
+        <option value="Religious Studies">Religious Studies</option>
+        <option value="Theatre Studies">Theatre Studies</option>
+        <option value="EPQ">EPQ</option>
+      </select>
+    </div>  
+
+
+    <div class="input-group mb-3">
+      
+      <label class="input-group-text" for="inputGroupSelect01">GCSE grade</label>
+      <select name="gcsegrd" class="form-select" id="inputGroupSelect01">
+        <option value="9">9</option>
+        <option value="8">8</option>
+        <option value="7">7</option>
+        <option value="6">6</option>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+      </select>
+
+      <label class="input-group-text" for="inputGroupSelect01">A-Level Predicted Grade</label>
+      <select name="alevpredgrd" class="form-select" id="inputGroupSelect01">
+        <option value="A*">A*</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+        <option value="U">U</option>
+      </select>
+
+      <label class="input-group-text" for="inputGroupSelect01">recent ordergrade for Student</label>
+      <select name="currentorder" class="form-select" id="inputGroupSelect01">
+        <option value="A*">A*</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+        <option value="U">U</option>
+      </select>
+
+   </div>
+
+   <div class="input-group mb-3">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">GCSE average score</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">between 1 and 9</a></li>
+      </ul>
+      <input name="gcseavg" type="text" class="form-control" aria-label="Text input with dropdown button">
+   </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="inputGroupSelect01">main revision technique</label>
+        <select name = "revtechnique" class="form-select" id="inputGroupSelect01">
+          <option value="paper flashcards">paper flashcards</option>
+          <option value="Anki flashcards">Anki flashcards</option>
+          <option value="flashcards">flashcards</option> <!-- i'm asking for the revision technique the student is currently using to filter out useful revision techniques to the user-->
+          <option value="using physics and maths tutor">using physics and maths tutor</option>
+          <option value="practice questions">practice questions</option>
+          <option value="mindmaps">mindmaps</option>
+          <option value="digital mindmaps">digital mindmaps</option>
+          <option value="quizlet">quizlet</option>
+          <option value="using CGP workbooks">using CGP workbooks</option>
+          <option value="using CGP textbooks">using CGP textbooks</option>
+          <option value="reading textbooks">reading textbooks</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-lg">Submit results</button>
+
+  </form>
+
+{% endblock %}
