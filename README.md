@@ -1,5 +1,5 @@
 
-# Grade Predictor
+# Grade Predictors
 
 The **Grade Predictor** is a machine learning-based application designed to predict student grades based on various input features such as study hours, attendance, and previous exam scores. This project is built using Python and leverages popular libraries like Scikit-learn, Pandas, and NumPy for data processing and model training.
 
